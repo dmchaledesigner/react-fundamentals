@@ -1,9 +1,16 @@
-
+import React from 'react';
+import Navigation from './Components/Navigation';
+import Home from './Components/Home';
 
 function App() {
   return (
-    <div className="container">
-      <h1>test</h1>
+
+    <div className="App">
+      <Navigation />
+      <div className="content">
+        <Home />
+
+      </div>
     </div>
   );
 }
