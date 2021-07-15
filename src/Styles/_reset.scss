@@ -60,6 +60,15 @@
   text-decoration: none;
 }
 
+.blog-preview button{
+    margin: 16px 0px;
+    padding: 7px 20px;
+    color:#ddd;
+    background-color: #f1356d;
+    border: none;
+    border-radius: 10px;
+}
+
 /* blog details page */
 .blog-details h2 {
   font-size: 20px;
@@ -101,11 +110,11 @@
   box-sizing: border-box;
   display: block;
 }
-.create button {
-  background: #f1356d;
-  color: #fff;
-  border: 0;
-  padding: 8px;
-  border-radius: 8px;
-  cursor: pointer;
-}
+// .create button {
+//   background: #f1356d;
+//   color: #fff;
+//   border: 0;
+//   padding: 8px;
+//   border-radius: 8px;
+//   cursor: pointer;
+// }

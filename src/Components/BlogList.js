@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Button from './Button';
 
 const BlogList = ({ blogsItems, title, deletePost }) => {
 
@@ -12,9 +13,10 @@ const BlogList = ({ blogsItems, title, deletePost }) => {
                     <div className="blog-preview" key={blog.id}>
                         <h2>{blog.title}</h2>
                         <p>written by: {blog.author}</p>
-                        <button
+                        <Button
                             onClick={() => deletePost(blog.id)}
-                        >Delete Post</button>
+                        >Delete Post</Button>
+
                     </div>
                 ))
             }
