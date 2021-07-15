@@ -13,9 +13,11 @@ const BlogList = ({ blogsItems, title, deletePost }) => {
                     <div className="blog-preview" key={blog.id}>
                         <h2>{blog.title}</h2>
                         <p>written by: {blog.author}</p>
-                        <Button
-                            onClick={() => deletePost(blog.id)}
-                        >Delete Post</Button>
+
+                        <Button>
+                            {/* onClick={() => deletePost(blog.id)}> delete function but from state */}
+                            Delete Post
+                        </Button>
 
                     </div>
                 ))
