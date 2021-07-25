@@ -1,34 +1,24 @@
-import React from 'react';
-import Button from './Button';
+import React from 'react'
+import { Link } from 'react-router-dom';
 
-const BlogList = ({ blogsItems, title, deletePost }) => {
+const BlogList = ({ blogs, title }) => {
 
 
     return (
         <div className="blog-list">
             <h2>{title}</h2>
-
             {
-                blogsItems.map((blog) => (
+                blogs.map((blog) => (
                     <div className="blog-preview" key={blog.id}>
-                        <h2>{blog.title}</h2>
-                        <p>written by: {blog.author}</p>
-
-                        <Button>
-                            {/* onClick={() => deletePost(blog.id)}> delete function but from state */}
-                            Delete Post
-                        </Button>
-
+                        <Link to={`/blogs/${blog.id}`}>
+                            <h2>{blog.title}</h2>
+                            <p>written by: {blog.author}</p>
+                        </Link>
                     </div>
                 ))
             }
-
         </div>
     )
-}
-
-BlogList.defaultProps = {
-    title: 'Add title here',
 }
 
 export default BlogList
