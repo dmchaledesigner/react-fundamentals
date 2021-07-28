@@ -1,34 +1,23 @@
-import HomePage from "./components/HomePage";
-import Navbar from "./components/Navbar";
-import CreatePage from './components/Create';
-import BlogDetails from "./components/BlogDetails";
-import { Route, Switch } from 'react-router-dom'
-
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
-
-
-
-
   return (
     <div className="App">
-
-
-
-      <Navbar />
-
-      <div className="content">
-
-        <Switch>
-          <Route path="/" component={HomePage} exact />
-          <Route path="/create" component={CreatePage} />
-          <Route path="/blogs/:id" component={BlogDetails} />
-        </Switch>
-
-      </div>
-
-
-
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
 }
